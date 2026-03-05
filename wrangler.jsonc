@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "minimal-vinext-next-og-deploy-repro",
+  "compatibility_date": "2026-03-05",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "./worker/index.ts",
+  "assets": {
+    "not_found_handling": "none",
+    "binding": "ASSETS",
+    "directory": "./dist/client",
+  },
+  "images": {
+    "binding": "IMAGES",
+  },
+}
